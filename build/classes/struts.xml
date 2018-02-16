@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="loginAction_login" class="业务逻辑层.LoginAction_login">
+			<result name="jumpToIndexUser">/index_user.jsp</result>
+			<result name="jumpToIndexAdmin">/index_administrator.jsp</result>
+			<result name="jumpToLogin">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="loginAction_register" class="业务逻辑层.LoginAction_register">
+			<result name="jumpToAdminReg">/管理员注册.jsp</result>
+			<result name="jumpToUserReg">/用户注册.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="AdministratorRegisterAction" class="业务逻辑层.AdministratorRegisterAction">
+			<result name="jumpToLogin">/login.jsp</result>
+			<result name="jumpToAdminReg">/管理员注册.jsp</result>
+		</action>
+		<action name="UserRegisterAction" class="业务逻辑层.UserRegisterAction">
+			<result name="jumpToLogin">/login.jsp</result>
+			<result name="jumpToUserReg">/用户注册.jsp</result>
+		</action>
+		<action name="personRecordAction" class="业务逻辑层.PersonRecordAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="carRecordAction" class="业务逻辑层.CarRecordAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="personDeleteAction" class="业务逻辑层.PersonDeleteAction">
+			<result name="jumpToPersonDelete">/人员删除.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="personModifyAction" class="业务逻辑层.PersonModifyAction">
+			<result name="jumpToIndexUser">/人员登记.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="carDeleteAction" class="业务逻辑层.CarDeleteAction">
+			<result name="jumpTofee">/收费.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="carModifyAction" class="业务逻辑层.CarModifyAction">
+			<result name="jumpToCardengji">/车辆登记.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="ShenHeAction" class="业务逻辑层.ShenHeAction">
+			<result name="jumpToUserShenHe">/用户审核.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="admin_deletePersonAction" class="业务逻辑层.Admin_deletePersonAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="admin_deleteCarAction" class="业务逻辑层.Admin_deleteCarAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="searchPersonAction" class="业务逻辑层.SearchPersonAction">
+			<result name="jumpToSearchPerson">/searchPerson.jsp</result>
+		</action>
+		<action name="searchCarAction" class="业务逻辑层.SearchCarAction">
+			<result name="jumpToSearchCar">/searchCar.jsp</result>
+		</action>
+		<action name="downloadPersonAction" class="业务逻辑层.PersonOutputExcelAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="inputName">inputExcel</param>
+				<param name="contentDisposition">attachment;filename="${#request['filename']}"</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+		<action name="downloadCarAction" class="业务逻辑层.CarOutputExcelAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="inputName">inputExcel</param>
+				<param name="contentDisposition">attachment;filename="${#request['filename']}"</param>
+				<param name="bufferSize">8192</param>
+			</result>
+		</action>
+	</package>
+</struts>

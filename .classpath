@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_74">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-examples-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-excelant-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-ooxml-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-ooxml-schemas-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="H:/eclipse(EE)编程代码/高校进出人员及车辆管理系统/poi-3.11/poi-scratchpad-3.11-20141221.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
